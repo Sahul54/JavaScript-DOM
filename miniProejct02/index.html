@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password | Genterator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Genterator</h1>
+
+        <div class="display-container">
+
+            <input readonly placeholder="Password" class="display" data-passwordDisplay>
+            <button data-copy>
+                <span data-copyMsg></span>
+                <img src="./assets/copy.svg" alt="copy" width="23" height="23">
+            </button>
+
+
+            <div class = "input-container">
+                <div class = "length-container">
+                    <p>Password Length</p>
+                    <p data-lengthNumber>8</p>
+                </div>
+                
+                <!-- silder -->
+                <input type="range" min="1" max="20" class ="slider" data-lengthSlider>
+   
+                <!-- checkbox -->
+                <div>
+                    <input type="checkbox" name="" id="uppercase">
+                    <label for="uppercase" >Include UpperCase</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="lowercase">
+                    <label for="lowercase" >Include lowercase</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="number">
+                    <label for="number" >Include number</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="symbols">
+                    <label for="symbols" >Include symbols</label>
+                </div>
+
+                <!-- sterngth section -->
+                <div class="stength-section">
+                    <p>Sterngth</p>
+                    <div data-indecator></div>
+                </div>
+
+                <!-- genterate password -->
+                <div class="genterateButton">
+                    <button>Genterate Password</button>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
